@@ -1,4 +1,39 @@
-p {
-    color: blue;
+
+@font-face
+{
+    font-family: Gotham_bold;
+    src: url(Gotham-font-family/Gotham/Gotham-Bold.otf);
+}
+@font-face {
+    font-family: Gotham_medium;
+    src: url(gotham-font-family/Gotham/Gotham-Medium.otf);
+}
+@font-face {
+    font-family: Gotham_light;
+    src: url(gotham-font-family/Gotham/Gotham-Light.otf);
+}
+
+body
+{
+    font-family: Gotham_light;
+    background-color: #0E1428;
+    color: white;
+    font-size: 16px;
+    
+    
+}
+
+header{
+    color: #D9BBA0;
+    align-items: center;
     text-align: center;
+    font-family: gotham_bold;
+    padding: 15px;
+}
+
+h3 
+{
+    color: #F6E8E1;
+    font-family: Gotham_medium;
+    font-size: 20px
 }

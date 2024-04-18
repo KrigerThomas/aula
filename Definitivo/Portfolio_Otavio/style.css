@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -32,6 +37,7 @@ header {
     font-weight: 600;
 }
 
+
 nav a{
     font-size: 18px;
     color: #E0E0E0;
@@ -53,6 +59,7 @@ nav a:hover {
     display: flex;
     align-items: center;
     padding: 0 10%;
+    scroll-behavior: smooth;
 }
 
 #Conteudo-Início{
@@ -197,4 +204,132 @@ nav a:hover {
     width: 100%;
 
 
+}
+
+.Sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    background: #000000;
+    padding-bottom: 6rem;
+    scroll-behavior: smooth;
+}
+
+#Titulo {
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+span {
+    color: #e69b00;
+}
+
+#Sobre_img {
+    position: relative;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Sobre_img img {
+    width: 90%;
+    border-radius: 50%;
+    border: .2rem solid #e69b00;
+}
+
+#Sobre_img #Circulo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border-top: .2rem solid #0E1428;
+    border-bottom: .2rem solid #0E1428;
+    border-left: .2rem solid #e69b00;
+    border-right: .2rem solid #e69b00;
+}
+
+#Texto_sobre {
+    text-align: center;
+}
+
+#Texto_sobre h3 {
+    font-size: 2.6rem;
+}
+
+#Texto_sobre p {
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+}
+
+.Historico {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: auto;
+    padding-bottom: 5rem;
+}
+
+.Historico #Linha_Historico {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+#Linha_Historico .Coluna_Historico {
+    flex: 1 1 40rem;
+}
+
+.Coluna_Historico .Cabeçalho {
+    font-size: 2.5rem;
+    margin: 0 0 1.5rem 2rem;
+}
+
+.Coluna_Historico .Caixa_Historico {
+    border-left: .2rem solid #e69b00;
+}
+
+.Caixa_Historico .conteudo_Historico {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.Caixa_Historico .conteudo_Historico::before {
+    content: '';
+}
+
+.conteudo_Historico .conteudo {
+    position: relative;
+    padding: 1.5rem;
+    border: .2rem solid #e69b00;
+    border-radius: .6rem;
+    margin-bottom: 2rem;
+}
+
+.conteudo_Historico .conteudo .ano {
+    font-size: 1.5rem;
+    color: #e69b00;
+    padding-bottom: .5rem;
+}
+
+.conteudo_Historico.conteudo.ano i {
+    padding-right: .5rem;
+}
+
+.conteudo_Historico .conteudo h3 {
+    font-size: 1.8rem;
+}
+
+.conteudo_Historico .conteudo p {
+    font-size: 1.6rem;
+    padding-top: .5rem;
 }

@@ -1,0 +1,5 @@
+Portfólio feito por Thomás Kriger de Souza para projeto avaliativo da disciplina de Construção de Software para Web do professor Otavio Lube dos Santos da Universidade de Vila Velha em 20/04/2024.
+
+Projeto foi inspirado no vídeo do "Codehal" como segue link original do vídeo: https://youtu.be/sQoiM7i5Nqc?si=dGHwfsHZG_wkmV2B
+
+Aviso legal: Como explícito na descrição do vídeo, o uso legal da página está sobre a Seção 107 da Lei de Direitos Autorais de 1976, que diz que é permitido a cópia para fins educacioanis e não lucrativos.

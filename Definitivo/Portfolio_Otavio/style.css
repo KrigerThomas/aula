@@ -1,15 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
-html {
-    scroll-behavior: smooth;
-}
+
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    border: none;
+    outline: none;
     scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
 }
 
 body {
@@ -22,8 +28,8 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 10%;
-    background: #000000;
+    padding: 2rem 9%;
+    background: #110E29;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,19 +37,19 @@ header {
 }
 
 .logo {
-    font-size: 25px;
+    font-size: 2.5rem;
     color: #e69b00;
     text-decoration: none;
     font-weight: 600;
 }
 
 
-nav a{
-    font-size: 18px;
+nav a {
+    font-size: 1.7rem;
     color: #E0E0E0;
     text-decoration: none;
     font-weight: 500;
-    margin-left: 35px;
+    margin-left: 3.5rem;
     transition: .3s;
 }
 
@@ -51,7 +57,7 @@ nav a:hover {
     color: #e69b00;
 }
 
-#Início{
+#Início {
     height: 100vh;
     /*background: url('Foto.jpg') no-repeat;*/
     background-size: cover;
@@ -62,7 +68,7 @@ nav a:hover {
     scroll-behavior: smooth;
 }
 
-#Conteudo-Início{
+#Conteudo-Início {
     max-width: 600px;
 }
 
@@ -72,7 +78,7 @@ nav a:hover {
     line-height: 1.2;
 }
 
-#Conteudo-Início h3{
+#Conteudo-Início h3 {
     font-size: 32px;
     font-weight: 700;
     color: #e69b00;
@@ -202,17 +208,17 @@ nav a:hover {
 
 #sociais a:hover::before {
     width: 100%;
-
-
 }
 
 .Sobre {
+    height: 100vh;
+    padding: 0 10%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 2rem;
-    background: #000000;
+    gap: 3rem;
+    background: #110E29;
     padding-bottom: 6rem;
     scroll-behavior: smooth;
 }
@@ -235,6 +241,7 @@ span {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 5rem;
 }
 
 #Sobre_img img {
@@ -251,8 +258,8 @@ span {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    border-top: .2rem solid #0E1428;
-    border-bottom: .2rem solid #0E1428;
+    border-top: .2rem solid #110E29;
+    border-bottom: .2rem solid #110E29;
     border-left: .2rem solid #e69b00;
     border-right: .2rem solid #e69b00;
 }
@@ -270,22 +277,33 @@ span {
     margin: 2rem 0 3rem;
 }
 
+.caixa_butão a {
+    display: inline-block;
+    width: 15rem;
+
+}
+
 .Historico {
+    height: 100vh;
+    padding: 0 10%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    min-height: auto;
     padding-bottom: 5rem;
+    margin-bottom: 35rem;
+
 }
 
 .Historico #Linha_Historico {
+    height: 20vh;
     display: flex;
     flex-wrap: wrap;
     gap: 5rem;
 }
 
 #Linha_Historico .Coluna_Historico {
+    height: 50vh;
     flex: 1 1 40rem;
 }
 
@@ -305,6 +323,13 @@ span {
 
 .Caixa_Historico .conteudo_Historico::before {
     content: '';
+    position: absolute;
+    top: 0;
+    left: -1.1rem;
+    width: 2rem;
+    height: 2rem;
+    background: #e69b00;
+    border-radius: 50%;
 }
 
 .conteudo_Historico .conteudo {
@@ -313,6 +338,23 @@ span {
     border: .2rem solid #e69b00;
     border-radius: .6rem;
     margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.conteudo_Historico .conteudo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #110E29;
+    z-index: -1;
+    transition: .5s;
+}
+
+.conteudo_Historico .conteudo:hover::before {
+    width: 100%;
 }
 
 .conteudo_Historico .conteudo .ano {
@@ -332,4 +374,210 @@ span {
 .conteudo_Historico .conteudo p {
     font-size: 1.6rem;
     padding-top: .5rem;
+}
+
+.Habilidades {
+    width: 100%;
+    padding: 5% 10%;
+    padding-bottom: 7rem;
+    background: #110E29;
+}
+
+.Habilidades .Linhas_Habilidades {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+.Linhas_Habilidades .Colunas_Habilidades {
+    flex: 1 1 40rem;
+}
+
+.Colunas_Habilidades #Título {
+    font-size: 2.5rem;
+    margin: 0 0 1.5rem;
+}
+
+.Caixa_Habilidades .Conteudo_Habilidades {
+    position: relative;
+    border: .2rem solid #e69b00;
+    border-radius: .6rem;
+    padding: .5rem 1.5rem;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.Caixa_Habilidades .Conteudo_Habilidades::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: #0E1428;
+    z-index: -1;
+    transition: .5s;
+}
+
+.Caixa_Habilidades .Conteudo_Habilidades:hover::before {
+    width: 100%;
+}
+
+.Conteudo_Habilidades .Progresso {
+    padding: 1rem 0;
+}
+
+.Conteudo_Habilidades .Progresso h3 {
+    font-size: 1.7rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Conteudo_Habilidades .Progresso h3 span {
+    color: #E0E0E0;
+
+}
+
+.Conteudo_Habilidades .Progresso .Barra {
+    height: 2.5rem;
+    border-radius: .6rem;
+    border: .2rem solid #e69b00;
+    padding: .5rem;
+    margin: 1rem 0;
+}
+
+.Conteudo_Habilidades .Progresso .Barra span {
+    display: block;
+    height: 100%;
+    border-radius: .3rem;
+    background: #e69b00;
+}
+
+.Colunas_Habilidades:nth-child(1) .Conteudo_Habilidades .Progresso:nth-child(1) .Barra span {
+    width: 30%;
+}
+
+.Colunas_Habilidades:nth-child(1) .Conteudo_Habilidades .Progresso:nth-child(2) .Barra span {
+    width: 35%;
+}
+
+.Colunas_Habilidades:nth-child(1) .Conteudo_Habilidades .Progresso:nth-child(3) .Barra span {
+    width: 0%;
+}
+
+.Colunas_Habilidades:nth-child(2) .Conteudo_Habilidades .Progresso:nth-child(1) .Barra span {
+    width: 75%;
+}
+
+.Colunas_Habilidades:nth-child(2) .Conteudo_Habilidades .Progresso:nth-child(2) .Barra span {
+    width: 90%;
+}
+
+.Colunas_Habilidades:nth-child(2) .Conteudo_Habilidades .Progresso:nth-child(3) .Barra span {
+    width: 65%;
+}
+
+#Contato {
+    width: 100%;
+    padding: 5% 10%;
+    min-height: auto;
+    padding-bottom: 7rem;
+}
+
+#Contato form {
+    max-width: 70rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#Contato form .input-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#Contato form .input-box .input-field {
+    position: relative;
+    width: 48%;
+    margin: .8rem 0;
+}
+
+#Contato form .input-box .input-field input,
+#Contato form .Campo_Texto textarea {
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: #E0E0E0;
+    background: transparent;
+    border-radius: .6rem;
+    border: .2rem solid #e69b00;
+}
+
+#Contato form .input-box .input-field input::placeholder,
+#Contato form .Campo_Texto textarea::placeholder {
+    color: #E0E0E0;
+}
+
+#Contato form .foco {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #110E29;
+    border-radius: .6rem;
+    z-index: -1;
+    transition: .5s;
+}
+
+#Contato form .input-box .input-field input:focus~.foco,
+#Contato form .input-box .input-field input:valid~.foco,
+#Contato form .Campo_Texto textarea:focus~.foco, 
+#Contato form .Campo_Texto textarea:valid~.foco {
+    width: 100%;
+}
+
+#Contato form .Campo_Texto {
+    position: relative;
+    margin: .8rem 0 2.7rem;
+    display: flex;
+}
+
+#Contato form .Campo_Texto textarea {
+    resize: none;
+}
+
+#Contato form .caixa_butão #butão {
+    cursor: pointer;
+}
+
+#Rodapé {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: #110E29;
+}
+
+.Texto_Rodape p {  
+    font-size: 1.4rem;
+}
+
+#Icone_Rodape a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background: #e69b00;
+    border: .2rem solid #e69b00;
+    border-radius: .6rem;
+}
+
+#Icone_Rodape a i {
+    font-size: 2.4rem;
+    color: #110E29;
 }
